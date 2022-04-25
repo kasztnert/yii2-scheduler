@@ -24,7 +24,7 @@ class TaskRunner extends Model
      */
     public function RunAllTasks()
     {
-        $tasks = SchedulerTask::find()->all();
+        $tasks = SchedulerTask::findAll(['status_id' => SchedulerStatus::ON]);
         if (empty($tasks)) {
             $this->output .= "Any task is not found\n";
             return false;

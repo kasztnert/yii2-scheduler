@@ -1,20 +1,21 @@
 <?php
 
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 
 $this->title = 'Task scheduler';
 ?>
+<script>var baseUrl = "<?= Yii::$app->urlManager->baseUrl ?>";</script>
 <div id="yii2-scheduler">
     <h2><?= Html::encode($this->title) ?></h2>
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="tasks" aria-controls="tasks" role="tab" data-toggle="tab">Task list</a>
+        <li role="presentation" class="nav-item">
+            <a href="tasks" aria-controls="tasks" role="tab" data-toggle="tab" class="nav-link active">Task list</a>
         </li>
-        <li role="presentation">
-            <a href="task-create" aria-controls="task-create" role="tab" data-toggle="tab">Add/Edit task</a>
+        <li role="presentation" class="nav-item">
+            <a href="task-create" aria-controls="task-create" role="tab" data-toggle="tab" class="nav-link">Add/Edit task</a>
         </li>
-        <li role="presentation">
-            <a href="logs" aria-controls="logs" role="tab" data-toggle="tab">Logs</a>
+        <li role="presentation" class="nav-item">
+            <a href="logs" aria-controls="logs" role="tab" data-toggle="tab" class="nav-link">Logs</a>
         </li>
     </ul>
     <div class="tab-content">

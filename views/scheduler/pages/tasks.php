@@ -1,6 +1,7 @@
 <?php
 
 use spk\scheduler\models\SchedulerStatus;
+use kartik\icons\Icon;
 use yii\grid\GridView;
 use yii\helpers\Html;
 use yii\widgets\Pjax;
@@ -64,7 +65,7 @@ use yii\widgets\Pjax;
                 'template' => '<span style="white-space: nowrap">{run} {view} {edit} {log} {delete}</span>',
                 'buttons' => [
                     'run' => function ($url, $model) {
-                        return Html::a('<span class="glyphicon glyphicon-play"></span>',
+                        return Html::a(Icon::show('play'),
                             '#',
                             [
                                 'title' => 'Run',
@@ -72,7 +73,7 @@ use yii\widgets\Pjax;
                             ]);
                     },
                     'view' => function ($url, $model) {
-                        return Html::a('<span class="glyphicon glyphicon-eye-open"></span>',
+                        return Html::a(Icon::show('eye'),
                             '#',
                             [
                                 'title' => 'View',
@@ -80,7 +81,7 @@ use yii\widgets\Pjax;
                             ]);
                     },
                     'edit' => function ($url, $model) {
-                        return Html::a('<span class="glyphicon glyphicon-pencil"></span>',
+                        return Html::a(Icon::show('pencil-alt'),
                             '#',
                             [
                                 'title' => 'Edit',
@@ -88,7 +89,7 @@ use yii\widgets\Pjax;
                             ]);
                     },
                     'log' => function ($url, $model) {
-                        return Html::a('<span class="glyphicon glyphicon-list"></span>',
+                        return Html::a(Icon::show('list'),
                             '#',
                             [
                                 'title' => 'Logs',
@@ -96,7 +97,7 @@ use yii\widgets\Pjax;
                             ]);
                     },
                     'delete' => function ($url, $model) {
-                        return Html::a('<span class="glyphicon glyphicon-trash"></span>',
+                        return Html::a(Icon::show('trash'),
                             '#',
                             [
                                 'title' => 'Delete',

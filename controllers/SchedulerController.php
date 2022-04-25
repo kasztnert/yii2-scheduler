@@ -12,6 +12,7 @@ use spk\scheduler\models\SchedulerTaskSearch;
 use spk\scheduler\models\TaskRunner;
 use yii;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -28,12 +29,21 @@ class SchedulerController extends Controller
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => [
                     'task-delete' => ['POST'],
                     'logs-delete' => ['POST'],
                 ],
             ],
+			'access' => [
+				'class' => AccessControl::class,
+				'rules' => [
+					[
+						'allow' => true,
+						'roles' => ['admin'],
+					]
+				]
+			]
         ];
     }
 
