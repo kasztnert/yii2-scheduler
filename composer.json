@@ -25,7 +25,6 @@
         "yiisoft/yii2-bootstrap4": "~2.0.8",
         "kartik-v/yii2-widget-datepicker": "*",
         "kartik-v/yii2-field-range": "*",
-        "kartik-v/yii2-icons": "*",
         "dragonmantank/cron-expression": "^1.2",
         "hanneskod/classtools": "~1.0"
     },
