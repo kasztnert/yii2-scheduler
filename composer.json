@@ -1,5 +1,5 @@
 {
-    "name": "egorspk/yii2-scheduler",
+    "name": "kasztnert/yii2-scheduler",
     "description": "Yii2 scheduler module",
     "type": "yii2-extension",
     "minimum-stability": "dev",
