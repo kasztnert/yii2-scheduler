@@ -11,7 +11,6 @@ class SchedulerController extends Controller {
 	 * Execute all tasks considering cron time
 	 */
 	public function actionRun() {
-		file_put_contents('/tmp/kukucs', date('Y-m-d H:i:s'));
 		$runner = new TaskRunner();
 		$res = $runner->RunAllTasks();
 		switch ($res) {
