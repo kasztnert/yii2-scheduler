@@ -1,5 +1,5 @@
 {
-    "name": "egorspk/yii2-scheduler",
+    "name": "kasztnert/yii2-scheduler",
     "description": "Yii2 scheduler module",
     "type": "yii2-extension",
     "minimum-stability": "dev",
@@ -10,10 +10,10 @@
         "crontab"
     ],
     "license": "MIT",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "support": {
-        "source": "https://github.com/egor-spk/yii2-schedulerc",
-        "issues": "https://github.com/egor-spk/yii2-scheduler/issues"
+        "source": "https://github.com/kasztnert/yii2-schedulerc",
+        "issues": "https://github.com/kasztnert/yii2-scheduler/issues"
     },
     "authors": [{
             "name": "Egor Kuzmin",
@@ -25,6 +25,7 @@
         "yiisoft/yii2-bootstrap4": "~2.0.8",
         "kartik-v/yii2-widget-datepicker": "*",
         "kartik-v/yii2-field-range": "*",
+        "kartik-v/yii2-icons": "@dev",
         "dragonmantank/cron-expression": "^1.2",
         "hanneskod/classtools": "~1.0"
     },
