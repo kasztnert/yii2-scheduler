@@ -34,7 +34,6 @@ use yii\widgets\Pjax;
                 'class' => 'table table-bordered table-hover',
             ],
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
             'command',
             'cron_time',
             'comment',
