@@ -11,7 +11,7 @@ class AppAssets extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/egorspk/yii2-scheduler/assets';
+    public $sourcePath = '@vendor/kasztnert/yii2-scheduler/assets';
 
     /**
      * @inheritdoc

@@ -1,5 +1,5 @@
 {
-    "name": "egorspk/yii2-scheduler",
+    "name": "kasztnert/yii2-scheduler",
     "description": "Yii2 scheduler module",
     "type": "yii2-extension",
     "minimum-stability": "dev",
@@ -10,15 +10,20 @@
         "crontab"
     ],
     "license": "MIT",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "support": {
-        "source": "https://github.com/egor-spk/yii2-scheduler",
-        "issues": "https://github.com/egor-spk/yii2-scheduler/issues"
+        "source": "https://github.com/kasztnert/yii2-scheduler",
+        "issues": "https://github.com/kasztnert/yii2-scheduler/issues"
     },
-    "authors": [{
+    "authors": [
+        {
             "name": "Egor Kuzmin",
             "homepage": "https://github.com/egor-spk"
-        }
+        },
+        {
+            "name": "Tamas Kasztner",
+            "homepage": "https://github.com/kasztnert"
+        }        
     ],
     "require": {
         "yiisoft/yii2": "*",
