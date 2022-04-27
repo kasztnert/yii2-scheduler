@@ -6,24 +6,26 @@ Cron task scheduler module for yii2. Features:
 * Tracking the results of tasks;
 * Ajax user interface.
 
+Module is based on egorspk/yii2-scheduler but it contains adaptation to Bootstrap 4, Kartik-V icons, and Yii framework 2.0.14. In the original
+Ajax requests did not work with the advanced template, because URLs were incorrect.
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 Either run:
 
 ```
-composer require egorspk/yii2-scheduler
+composer require kasztnert/yii2-scheduler
 ```
 
 or add
 ```
-"egorspk/yii2-scheduler": "^1.0"
+"kasztnert/yii2-scheduler": "^1.0"
 ```
 to the require section of your `composer.json` file.
 
 Subsequently, run
 ```
-yii migrate/up --migrationPath=@vendor/egorspk/yii2-scheduler/migrations
+yii migrate/up --migrationPath=@vendor/kasztnert/yii2-scheduler/migrations
 ```
 in order to create the required tables in your database.
 
@@ -44,6 +46,10 @@ in order to create the required tables in your database.
 Where:
  * /project_path/ - path to your yii2 project (for example, /var/www/yii/);
  * /php_path/ php - path to php (for example, /usr/bin/php).
+ 
+Please note that if you add a scheduled task on the GUI, the schedule resolution should correspond to the cron job, so if the 
+cron job is configured as */5 * * * *, then you can schedule tasks for minutes that are dividable by 5, otherwise they will
+not be executed.
 
 ### Settings (web config)
 * defaultFolder - path to the folder, where the methods of classes that can be used as a task (default value: 
