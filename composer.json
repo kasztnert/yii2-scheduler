@@ -27,7 +27,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap4": "~2.0.8",
+        "yiisoft/yii2-bootstrap5": "~2.0.3",
         "kartik-v/yii2-widget-datepicker": "*",
         "kartik-v/yii2-field-range": "*",
         "kartik-v/yii2-icons": "@dev",

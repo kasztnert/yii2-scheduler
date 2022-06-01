@@ -1,8 +1,8 @@
 <?php
 
 use spk\scheduler\models\SchedulerStatus;
-use yii\bootstrap4\Html;
-use yii\bootstrap4\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
